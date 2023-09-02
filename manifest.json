@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "pip",
+	"version": "0.1",
+
+	"description": "a firefox extension that makes my life easier",
+	"homepage_url": "https://github.com/jashith1/pip",
+
+	"content_scripts": [
+		{
+			"matches": ["https://www.wanikani.com/radicals*", "https://www.wanikani.com/kanji*", "https://www.wanikani.com/vocabulary*"],
+			"js": ["common/jquery.js", "sites/wanikani/count.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches": ["https://www.alliance4creativity.com/watch-it-legally/?utm_source=zoro.to&utm_medium=Domain&utm_campaign=Redirect"],
+			"js": ["sites/zoro/redirect.js"],
+			"run_at": "document_start"
+		}
+	],
+
+	"icons": {
+		"48": "icons/icon.png",
+		"96": "icons/icon.png"
+	}
+}
