@@ -11,11 +11,6 @@
 			"matches": ["https://www.wanikani.com/radicals*", "https://www.wanikani.com/kanji*", "https://www.wanikani.com/vocabulary*"],
 			"js": ["common/jquery.js", "sites/wanikani/count.js"],
 			"run_at": "document_end"
-		},
-		{
-			"matches": ["https://www.alliance4creativity.com/watch-it-legally/?utm_source=zoro.to&utm_medium=Domain&utm_campaign=Redirect"],
-			"js": ["sites/zoro/redirect.js"],
-			"run_at": "document_start"
 		}
 	],
 	"icons": {
